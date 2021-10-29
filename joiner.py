@@ -11,7 +11,7 @@ print(" |____/ \__,_|_| |_|_|\_\___/  \____/ \___/|_|_| |_|\___|_|   ")
                                                               
 print("                                      Made by Banks#6485")
 
-link = input('Discord Invite Link: ')
+link = input('Copy Discord invite link here: ')
 if len(link) > 6:
     link = link[19:]
 apilink = "https://discordapp.com/api/v6/invite/" + str(link)
@@ -26,4 +26,4 @@ with open('tokens.txt','r') as handle:
                 'Authorization': token
                 }
             requests.post(apilink, headers=headers)
-        print ("All valid tokens have joined!")
+        print ("All Tokens Joined!")
